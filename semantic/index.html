@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements in Html</title>
+    <style>
+        .placeholder {
+            color: lightblue;
+        }
+
+        hr {
+            color: aliceblue;
+        }
+
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser {
+            background: white;
+        }
+
+        .browser>h2,
+        p {
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="placeholder">The header element</h1>
+        <h1>What Does WWF Do?</h1>
+        <p>WWF's mission:</p>
+    </header>
+    <hr>
+    <nav>
+        <h1 class="placeholder">The NAV element</h1>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+    <hr>
+    <section>
+        <h1 class="placeholder">The section element</h1>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded in 1961.</p>
+    </section>
+    <hr>
+    <article>
+        <h1 class="placeholder">The article element</h1>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+            browser today!</p>
+    </article>
+    <hr>
+    <article class="all-browsers">
+        <h1 class="placeholder">The article element using css</h1>
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+    </article>
+    <hr>
+    <h1 class="placeholder">The figure element</h1>
+    <figure>
+        <img src="pic_trulli.jpg" alt="Trulli">
+        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+    <hr>
+    <h1 class="placeholder">The mark element</h1>
+
+    <h1>Do not forget to buy <mark>milk</mark> today.</h1>
+    <hr>
+    <aside>
+        <h1>The aside element</h1>
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international
+            pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <h1 class="placeholder">The summary element</h1>
+
+    <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </details>
+    <hr>
+    <h1 class="placeholder">The time element</h1>
+
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+    <hr>
+    <footer>
+        <h1 class="placeholder">The footer element</h1>
+    </footer>
+</body>
+
+</html>
