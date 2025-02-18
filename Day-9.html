@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-9</title>
+  </head>
+  <body>
+    <form action="" align="center">
+      <fieldset>
+        <legend>User Personal information</legend>
+        <table>
+          <tr>
+            <td><label for="name">Enter your full name:</label></td>
+            <td><input type="text" name="name" id="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Enter your email:</label></td>
+            <td><input type="email" name="email" id="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Enter your password:</label></td>
+            <td>
+              <input type="password" name="pass" id="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirmPassword">Confirm your password:</label></td>
+            <td>
+              <input
+                type="password"
+                name="confirmPass"
+                id="confirmPassword"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter your gender:</label></td>
+            <td align="left">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+              />
+              <label for="male">Male</label><br />
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                required
+              />
+              <label for="female">Female</label><br />
+              <input
+                type="radio"
+                name="gender"
+                id="others"
+                value="others"
+                required
+              />
+              <label for="others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Enter your Date Of Birth:</label></td>
+            <td><input type="date" name="dob" id="dob" required /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Enter your Address:</label></td>
+            <td><textarea name="address" id="address" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" value="Submit" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

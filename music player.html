@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+        }
+
+        .nav {
+            display: inline-flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        .nav>a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-areas: "img title play";
+        }
+
+        .title>h1 {
+            color: rgb(245, 48, 81);
+            font-size: 50px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 400px;
+        }
+
+        .play {
+            display: flex;
+        }
+
+        .play>h1 {
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 500px;
+        }
+
+        .start {
+            width: 80px;
+            height: 80px;
+            padding-top: 500px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 500px;
+        }
+
+        .button {
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body background="Music Player Start & Stop js\media\background.png">
+    <div class="nav">
+        <a href="">HOME</a>
+        <a href=""> MUSIC</a>
+        <a href="">ARTISTS</a>
+        <a href="">ABOUT</a>
+        <a href="">CONTACT</a>
+    </div>
+    <div class="main">
+        <div class="img">
+        </div>
+        <div class="title">
+            <h1>MY<br>Music</h1>
+        </div>
+        <div class="play">
+            <h1>Click Here To Listen</h1>&nbsp;
+            <div class="button-container">
+                <div id="playButton" class="button" style="background-image: url('play.png');"></div>
+            </div>
+
+            <audio id="audio" src="Music Player Start & Stop js\media\music.mp3"></audio>
+
+        </div>
+    </div>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('audio');
+
+        playButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playButton.style.backgroundImage = "url('pause.jpg')";
+            } else {
+                audio.pause();
+                playButton.style.backgroundImage = "url('play.png')";
+            }
+        });
+
+        audio.addEventListener('ended', () => {
+            playButton.style.backgroundImage = "url('Music Player Start & Stop js\media\play.png'')";
+        });
+
+    </script>
+</body>
+
+</html>

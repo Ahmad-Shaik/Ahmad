@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-15</title>
+    <style>
+      [class="body"] {
+        font-size: 20px;
+      }
+      [class="para"] {
+        color: orange;
+      }
+      [id="para"] {
+        color: white;
+        background-color: blue;
+        width: fit-content;
+      }
+      [name="para"] {
+        color: green;
+      }
+      .div1 p {
+        color: red;
+      }
+      .div2 > p{
+        color: blue;
+      }
+      .div4 + p{
+        color: yellow;
+      }
+      .div6 ~ p{
+        color: pink;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1>Simple Selectors</h1>
+    <ul>
+      <li>Name</li>
+      <li>Class</li>
+      <li>Id</li>
+    </ul>
+    <p class="para">This para is styled by class selector</p>
+    <p id="para">This para is styled by Id selector</p>
+    <p name="para">This para is styled by name selector</p>
+    <hr />
+    <h1>Combinator Selectors</h1>
+    <ul>
+      <li>Descendant combinator (space)</li>
+      <li>Child combinator (>)</li>
+      <li>Next sibling combinator (+)</li>
+      <li>Subsequent-sibling combinator (~)</li>
+    </ul>
+    <div class="div1">
+      <p>This para is styled by the Descendant Combinator Selector</p>
+      <div>
+        <p>This para is styled by the Descendant Combinator Selector</p>
+      </div>
+      <p>This para is styled by the Descendant Combinator Selector</p>
+    </div>
+    <div class="div2">
+        <p>This para is styled by the Child Combinator Selector</p>
+        <div class="subdiv">
+            <p>This para is styled by the Child Combinator Selector</p>
+        </div>
+        <p>This para is styled by the Child Combinator Selector</p>
+    </div>
+    <div class="div3">
+        <p>This para is styled by the Next Sibling Combinator Selector</p>
+        <div class="div4">
+            <p>This para is styled by the Next Sibling Combinator Selector</p>
+        </div>
+        <p>This para is styled by the Next Sibling Combinator Selector</p>
+    </div>
+    <div class="div5">
+        <p>This para is styled by the Subsequent Sibling Combinator Selector</p>
+            <div class="div6">
+                <p>This para is styled by the Subsequent Sibling Combinator Selector</p>
+            </div>
+        <p>This para is styled by the Subsequent Sibling Combinator Selector</p>
+    </div>
+  </body>
+</html>
